@@ -1,0 +1,99 @@
+    <style>
+      @import url("http://fonts.cdnfonts.com/css/cmu-serif");
+
+      html {
+        --main: #f3e9dc;
+        --bg: #090c08;
+        --accent: #ff7d00;
+      }
+      a {
+        text-decoration: underline;
+        color: var(--main);
+      }
+
+      span {
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        transform: scaleY(0);
+        /* display: none; */
+        transform-origin: top;
+        transition: all 0.5s ease;
+      }
+      span.on {
+        position: static;
+        visibility: visible;
+        opacity: 1;
+        display: inline;
+        transform: scaleY(1);
+        /* display: inline; */
+      }
+
+      .off {
+        visibility: hidden;
+        opacity: 0;
+
+        transform: scaleY(0);
+      }
+
+      div.on {
+        visibility: visible;
+        opacity: 1;
+        /* transform: scaleY(1); */
+      }
+
+      ::selection {
+        background-color: var(--accent);
+        color: var(--main);
+      }
+
+      .modal {
+        transform-origin: top;
+        transition: all 0.5s ease;
+
+        visibility: hidden;
+        opacity: 0;
+
+        position: absolute;
+
+        left: 50%;
+        transform: translateX(-50%);
+        /* top: 50%;
+        transform: translateY(-50%); */
+        z-index: 999;
+
+        background-color: var(--main);
+        color: var(--bg);
+        padding: 2rem;
+      }
+
+      .bgroup > p {
+        visibility: visible;
+        display: inline;
+        opacity: 1;
+        background-color: var(--accent);
+        transition: all 0.5s ease;
+        color: var(--main);
+        border: none;
+        padding: 0.25rem;
+        font-size: smaller;
+        display: inline;
+      }
+
+      .bgroup > p:hover {
+        background-color: var(--bg);
+        cursor: pointer;
+      }
+
+      body {
+        background-color: var(--bg);
+        color: var(--main);
+        font-family: "CMU Serif", Cambria, Cochin, Georgia, Times,
+          "Times New Roman", serif;
+        transition: all 0.5s ease;
+      }
+
+      #content {
+        margin: 10% 30% 0 30%;
+      }
+    </style>
