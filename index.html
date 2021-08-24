@@ -1,3 +1,46 @@
+    <script>
+      const queryElementDatum = (index, value) =>
+        document.querySelectorAll(`[data-${index}="${value}"]`);
+      const unwrap = (node) => node.replaceWith(...node.childNodes);
+      document.querySelectorAll("[data-md]").forEach((element) => {
+        console.log(element);
+        element.setAttribute("href", "#");
+        element.addEventListener("click", (e) => {
+          e.preventDefault();
+          const id = element.dataset.md;
+          const modal = queryElementDatum("mi", id)[0];
+          modal.classList.add("off");
+          modal.classList.remove("on");
+        });
+      });
+
+      document.querySelectorAll("[data-mo]").forEach((element) => {
+        element.setAttribute("href", "#");
+        element.addEventListener("click", (e) => {
+          e.preventDefault();
+          const id = element.dataset.mo;
+          const modal = queryElementDatum("mi", id)[0];
+          modal.classList.add("on");
+          unwrap(element);
+        });
+      });
+      document.querySelectorAll("[data-o]").forEach((element) => {
+        element.setAttribute("href", "#");
+        element.addEventListener("click", (e) => {
+          e.preventDefault();
+          const elements = queryElementDatum("ob", element.dataset.o);
+          elements.forEach((el) => {
+            el.classList.add("on");
+          });
+          queryElementDatum("cb", element.dataset.o).forEach((el) =>
+            el.classList.add("off")
+          );
+          if (!(element.dataset.cb === element.dataset.o)) {
+            unwrap(element);
+          }
+        });
+      });
+    </script>
     <style>
       @import url("http://fonts.cdnfonts.com/css/cmu-serif");
 
