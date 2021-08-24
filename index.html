@@ -1,4 +1,14 @@
     <script>
+      const toggleHome = () => {
+        const set = (va, val) => {
+          document.documentElement.style.setProperty(va, val);
+        };
+        set("--main", "#090c08");
+        set("--bg", "#f3e9dc");
+        set("--accent", "#16bac5");
+      };
+    </script>
+    <script>
       const queryElementDatum = (index, value) =>
         document.querySelectorAll(`[data-${index}="${value}"]`);
       const unwrap = (node) => node.replaceWith(...node.childNodes);
