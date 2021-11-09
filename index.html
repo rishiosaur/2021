@@ -100,24 +100,44 @@
           forward to its growth in the future.
         </p>
       </div>
+      <div data-mi="work" class="window tall">
+        <div class="header">
+          <button onclick="changeTheme('#F7FFF7', '#292F36', '#4ECDC4')">
+            ≡
+          </button>
+          <small>Currently:</small>
+        </div>
+        <p style="font-size: small">
+          Right now, I work at
+          <a class="outlink-w" href="https://petcodeusa.com">PetCode</a>,
+          helping to create the future of pet ownership for hundreds of
+          thousands across the US, build machine learning tools for millions of
+          customers at
+          <a class="outlink-w" href="https://bentoml.ai">BentoML</a>, scale the
+          world's largest community of high school hackers at
+          <a class="outlink-w" href="https://hackclub.com">Hack Club</a>, run
+          workshops and events for thousands at collegiate hackathons and tech
+          conferences worldwide, and a
+          <a class="outlink-w" href="/kitchensink.pdf">bunch of other things</a>
+          that I can't put into one modal.
+        </p>
+      </div>
       <div data-mi="idyllic" class="window tall">
         <div class="header">
           <button onclick="changeTheme('#0A100D', '#D6D5C9', '#B9BAA3')">
             ≡
           </button>
-          <small>Project: HN</small>
+          <small>Project: Idyllic</small>
         </div>
         <p style="font-size: small">
           <a class="outlink-w" href="https://z.rishi.cx/g/hn"
-            >Idyllic is a web </a
-          >, designed for the Hack Club community. <br /><br />
-          Originally a Postgres-backed GraphQL API, it's now evolved into an
-          Ethereum-compatible PoS-based blockchain implementation, with a
-          GraphQL frontend written in Golang.
-          <br /><br />
+            >Idyllic is a programming language</a
+          >
+          for writing performant web services. <br /><br />
           It performs up to 2.5x better than an equivalent Express app on
-          average, using 1.5x less boilerplate in example benchmarks. Idyllic
-          also hit the front page of r/ProgrammingLanguages on launch!
+          average, using 1.5x less boilerplate in example benchmarks, and ships
+          with a CLI and two compiler components. Idyllic also hit the front
+          page of r/ProgrammingLanguages on launch!
         </p>
       </div>
       <div data-mi="exercism" class="window tall">
@@ -128,17 +148,15 @@
           <small>Project: Exercism</small>
         </div>
         <p style="font-size: small">
-          <a class="outlink-w" href="https://exercism.io">Exercim</a> is one of
+          <a class="outlink-w" href="https://exercism.io">Exercism</a> is one of
           the world's largest CS Education platforms, with hundreds of thousands
           of users. <br /><br />
-          Originally a Postgres-backed GraphQL API, it's now evolved into an
-          Ethereum-compatible PoS-based blockchain implementation, with a
-          GraphQL frontend written in Golang. I helped lead JavaScript
-          development in my freshman year of high school.
+          I helped lead JavaScript curriculum and infrastructure development in
+          my freshman year of high school, focusing on writing internal tools
+          for the third iteration of our platform. Exercism gained popularity
+          for its unique spin on CS theory, bringing scalable mentorship and
+          problem-first packages to the masses.
           <br /><br />
-          <!-- Hundreds of hackers and <b>dozens</b> of apps ranging from joke AI
-          machines to casino have been built on top of the platform, and I look
-          forward to its growth in the future. -->
         </p>
       </div>
       <div data-mi="legist" class="window tall">
@@ -151,13 +169,11 @@
         <p style="font-size: small">
           <a class="outlink-w" href="https://devpost.com/software/legist"
             >Legist is a web platform </a
-          >that allows users to digest government policy in an efficient and
-          accessible manner. <br /><br />
-          Built in 36 hours, Legist took home the prize for
-          <br /><br />
-          Hundreds of hackers and <b>dozens</b> of apps ranging from joke AI
-          machines to casino have been built on top of the platform, and I look
-          forward to its growth in the future.
+          >that allows users to digest government policy efficiently.<br /><br />
+          Legist uses near-shot categorization to sort articles and papers, BERT
+          to identify entities in text and create a public data graph from
+          government sources, and summarization using DistilBART, all served on
+          top of BentoML.<br /><br />
         </p>
       </div>
     </div>
@@ -293,10 +309,8 @@
       <p>
         I <span class="on" data-cb="31"><a data-o="31 11">hack</a>.</span
         ><span data-ob="31"
-          ><a data-o="32">build things</a
-          ><!-- , put -->,
-          <!-- <a data-wo="stickers" data-o="33">stickers</a> up, -->
-          <a data-wo="experiences" data-o="34">lead</a> teams, and
+          ><a data-o="32">build things</a>,
+          <a data-wo="work" data-o="34">lead teams</a>, and
           <a data-wo="ghost" data-o="35">think about the future</a>.</span
         >
 
@@ -316,8 +330,22 @@
           especially proud of my work with
           <a onclick="changeTheme('#E6E1C5', '#395c6b', '#94778B')" data-wo="hn"
             >HN</a
-          >, Idyllic, Exercism, and Legist. You can find the complete list of my
-          projects over at my
+          >,
+          <a
+            onclick="changeTheme('#B4CDED', '#0D1821', '#344966')"
+            data-wo="idyllic"
+            >Idyllic</a
+          >,
+          <a
+            onclick="changeTheme('#0A2463', '#FFFAFF', '#3E92CC')"
+            data-wo="exercism"
+            >Exercism</a
+          >, and
+          <a
+            onclick="changeTheme('#77CBB9', '#220C10', '#506C64')"
+            data-wo="legist"
+            >Legist</a
+          >. You can find the complete list of my projects over at my
           <a href="https://z.rishi.cx/g/" class="outlink">GitHub</a>.
         </span>
       </p>
