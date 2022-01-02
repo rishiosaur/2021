@@ -6,27 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Rishi Kothari</title>
-    <meta name="description" content="I'm Rishi Kothari." />
+    <meta
+      name="description"
+      content="I'm Rishi Kothari—a 16 year old developer that builds startups like PetCode, runs events, gives talks, and writes lots of code."
+    />
     <meta name="author" content="Rishi Kothari" />
 
-    <meta property="og:title" content="A Basic HTML5 Template" />
+    <meta property="og:title" content="Rishi Kothari | Developer" />
     <meta property="og:type" content="website" />
 
-    <meta
-      property="og:url"
-      content="https://www.sitepoint.com/a-basic-html5-template/"
-    />
+    <meta property="og:url" content="https://rishi.cx" />
     <meta
       property="og:description"
-      content="A simple HTML5 Template for new projects."
+      content="I'm Rishi Kothari—a 16 year old developer that builds startups like PetCode, runs events, gives talks, and writes lots of code."
     />
     <meta property="og:image" content="image.png" />
 
-    <link rel="icon" href="/favicon.ico" />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-
-    <link rel="stylesheet" href="css/styles.css?v=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
   </head>
 
   <body>
@@ -118,7 +118,7 @@
           <a class="outlink-w" href="https://hackclub.com">Hack Club</a>, run
           workshops and events for thousands at collegiate hackathons and tech
           conferences worldwide, and a
-          <a class="outlink-w" href="/kitchensink.pdf">bunch of other things</a>
+          <a class="outlink-w" href="/resume.pdf">bunch of other things</a>
           that I can't put into one modal.
         </p>
       </div>
@@ -327,7 +327,7 @@
           it even better: transforming <i>human capital</i> into computational &
           social capital is the throughline for
           <a class="outlink" href="/experiences.pdf">all my experiences</a>: I'm
-          especially proud of my work with
+          particularly proud of my work with
           <a onclick="changeTheme('#E6E1C5', '#395c6b', '#94778B')" data-wo="hn"
             >HN</a
           >,
@@ -666,11 +666,20 @@
         margin: 10% 30% 10% 30%;
       }
 
+      p {
+        word-wrap: break-word;
+      }
+
       /* Small devices (portrait tablets and large phones, 600px and up) */
       @media only screen and (max-width: 1200px) {
         #content {
           margin: 8% 4% 0 4%;
-          width: 90vw;
+        }
+
+        html,
+        body {
+          max-width: 90vw;
+          overflow-x: hidden;
         }
       }
 
