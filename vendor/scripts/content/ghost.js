@@ -1,5 +1,5 @@
 const url =
-    "https://posts.rishi.cx/ghost/api/v3/content/posts/?key=bbf16d7b3550c412d7bd075ceb";
+    "https://posts.rishi.cx/ghost/api/v3/content/posts/?key=0fe16646b10ccb38d3ddc39608";
 
 const z = fetch(url).then(async (e) => {
     const { posts } = await e.json();
