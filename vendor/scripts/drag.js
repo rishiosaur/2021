@@ -11,8 +11,6 @@ Element.prototype.drag = function (setup) {
     }.bind(this);
 
     var mouseup = function (e) {
-        // document mouseup
-
         document.removeEventListener("mousemove", mousemove);
         document.removeEventListener("mouseup", mouseup);
 
@@ -26,8 +24,6 @@ Element.prototype.drag = function (setup) {
     handle.addEventListener(
         "mousedown",
         function (e) {
-            // element mousedown
-
             this.dragStartX = e.offsetX;
             this.dragStartY = e.offsetY;
 
@@ -45,7 +41,11 @@ Element.prototype.drag = function (setup) {
     setup.ondraginit && setup.ondraginit(e); // ondraginit event
 };
 
-document.querySelectorAll(".window").forEach((element) => {
-    console.log(element);
-    element.drag({ handle: element.firstElementChild.firstElementChild });
-});
+const resizeListener = window.matchMedia("(max-width: 1200px)");
+
+if (!resizeListener.matches) {
+    document.querySelectorAll(".window").forEach((element) => {
+        console.log(element);
+        element.drag({ handle: element.firstElementChild.firstElementChild });
+    });
+}
