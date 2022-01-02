@@ -41,7 +41,7 @@ Element.prototype.drag = function (setup) {
     setup.ondraginit && setup.ondraginit(e); // ondraginit event
 };
 
-const resizeListener = window.matchMedia("(max-width: 1200px)");
+// const resizeListener = window.matchMedia("(max-width: 1200px)");
 
 if (!resizeListener.matches) {
     document.querySelectorAll(".window").forEach((element) => {

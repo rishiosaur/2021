@@ -14,6 +14,8 @@ if (resizeListener.matches) {
     });
 }
 
+// console.log(resizeListener.matches)
+
 windows.forEach((e) => {
     e.style.zIndex = maxZindex + 1;
     maxZindex += 1;
